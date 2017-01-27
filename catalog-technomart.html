@@ -12,8 +12,8 @@
 					Техномарт
 				</a>
 				<form class="search" action="/echo" method="get">
-					<input type="search" name="search-request" id="search-field" placeholder="Поиск:">
 					<span class="search-icon"></span>
+					<input type="search" name="search-request" id="search-field" placeholder="Поиск:">
 				</form>
 				<div class="bookmarks">
 					<a href="#"><span class="bookmarks-icon"></span>Закладки:0</a>
@@ -26,66 +26,71 @@
 				</div>
 			</div>
 		</div>	
-		<div class="header-second-block clearfix">
-			<div class="company-description">
-				<p>
-					Интернет-магазин<br>
-					строительных материалов<br>
-					и инструментов для ремонта
-				</p>
-			</div>
-			<div class="company-contacts">
-				<div class="phone">
-					<span class="phone-icon"></span>
-					<a href="#">+7(812)555-05-55</a>
-				</div>
-				<div class="adress">
+		<div class="header-second-block">
+			<div class="container clearfix">
+				<div class="company-description">
 					<p>
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8	
-					</p>	
+						Интернет-магазин
+						строительных материалов
+						и инструментов для ремонта
+					</p>
 				</div>
-			</div>
-			<div class="user-block">
-				<a class="login username" href="#">
-					<span class="username-icon"></span>
-					Равшан Джамшутович
-				</a>
-				<ul class="user-menu">
-					<li>
-						<a href="#">Мои заказы</a>
-					</li>
-					<li>
-						<a href="#">Личный кабинет</a>
-					</li>
-				</ul>
+				<div class="company-contacts">
+					<div class="phone">
+						<span class="phone-icon"></span>
+						<a href="#">+7(812)555-05-55</a>
+					</div>
+					<div class="adress">
+						<p>
+							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8	
+						</p>	
+					</div>
+				</div>
+				<div class="user-block">
+					<a class="login username" href="#">
+						<span class="username-icon"></span>
+						Равшан Джамшутович
+					</a>
+					<span class="logout-icon"></span>
+					<ul class="user-menu">
+						<li>
+							<a href="#">Мои заказы</a>
+						</li>
+						<li>
+							<a href="#">Личный кабинет</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div class="header-third-block clearfix">
-			<nav class="main-navigation">
-				<ul>
-					<li>
-						<a href="index.html">Главная</a>
-					</li>
-					<li>
-						<a href="#">Компания</a>
-					</li>
-					<li>
-						<a href="catalog.html">Каталог</a>
-					</li>
-					<li>
-						<a href="#">Новости</a>
-					</li>
-					<li>
-						<a href="#">Спецпредложения</a>
-					</li>
-					<li>
-						<a href="#">Доставка</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>	
-			</nav>
+		<div class="header-third-block">
+			<div class="container clearfix">
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="#">Компания</a>
+						</li>
+						<li>
+							<a href="catalog.html">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Спецпредложения</a>
+						</li>
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>	
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -163,21 +168,9 @@
 				</form>
 			</div>
 		</div>
-
-
-
-
 		<div class="right-column">
 			<div class="column-title">
 				Сортировка:
-				<ul class="regulation">
-					<li>
-						<a class="active" href="#"><span class="up-icon"></span></a>
-					</li>
-					<li>
-						<a href="#"><span class="down-icon"></span></a>
-					</li>
-				</ul>
 				<ul class="sort-by">
 					<li>
 						<a class="active" href="#">По цене</a>
@@ -189,10 +182,19 @@
 						<a href="#">По функционалу</a>
 					</li>
 				</ul>
+				<ul class="regulation">
+					<li>
+						<a class="active" href="#"><span class="up-icon"></span></a>
+					</li>
+					<li>
+						<a href="#"><span class="down-icon"></span></a>
+					</li>
+				</ul>
 			</div>
 			<div class="catalog-items clearfix">
 				<article class="item">
 					<div class="action">
+						<span class="bookmarks-icon"></span>
 						<a class="btn buy" href="#">Купить</a>
 						<a class="btn bookmark" href="#">В закладки</a>
 					</div>
@@ -206,11 +208,12 @@
 						22500 р.
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">15500 р.</a>
+						<a class="btn price" href="#">15500 р.</a>
 					</div>
 				</article>
 				<article class="item">
 					<div class="action">
+						<span class="bookmarks-icon"></span>
 						<a class="btn buy" href="#">Купить</a>
 						<a class="btn bookmark" href="#">В закладки</a>
 					</div>
@@ -224,7 +227,7 @@
 						30500 р.
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">25500 р.</a>
+						<a class="btn price" href="#">25500 р.</a>
 					</div>
 				</article>
 				<article class="item">
@@ -240,14 +243,14 @@
 						<a href="#">Перфоратор BOSCH BFG 2000</a>
 					</div>
 					<div class="item-old-price">
-
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">12500 р.</a>
+						<a class="btn price" href="#">12500 р.</a>
 					</div>
 				</article>
 				<article class="item">
 					<div class="action">
+						<span class="bookmarks-icon"></span>
 						<a class="btn buy" href="#">Купить</a>
 						<a class="btn bookmark" href="#">В закладки</a>
 					</div>
@@ -261,7 +264,7 @@
 						22500 р.
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">15500 р.</a>
+						<a class="btn price" href="#">15500 р.</a>
 					</div>
 				</article>
 				<article class="item">
@@ -280,11 +283,12 @@
 						30500 р.
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">25500 р.</a>
+						<a class="btn price" href="#">25500 р.</a>
 					</div>
 				</article>
 				<article class="item">
 					<div class="action">
+						<span class="bookmarks-icon"></span>
 						<a class="btn buy" href="#">Купить</a>
 						<a class="btn bookmark" href="#">В закладки</a>
 					</div>
@@ -295,10 +299,9 @@
 						<a href="#">Перфоратор BOSCH BFG 2000</a>
 					</div>
 					<div class="item-old-price">
-
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">12500 р.</a>
+						<a class="btn price" href="#">12500 р.</a>
 					</div>
 				</article>
 				<article class="item">
@@ -317,11 +320,12 @@
 						22500 р.
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">15500 р.</a>
+						<a class="btn price" href="#">15500 р.</a>
 					</div>
 				</article>
 				<article class="item">
 					<div class="action">
+						<span class="bookmarks-icon"></span>
 						<a class="btn buy" href="#">Купить</a>
 						<a class="btn bookmark" href="#">В закладки</a>
 					</div>
@@ -335,11 +339,12 @@
 						30500 р.
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">25500 р.</a>
+						<a class="btn price" href="#">25500 р.</a>
 					</div>
 				</article>
 				<article class="item">
 					<div class="action">
+						<span class="bookmarks-icon"></span>
 						<a class="btn buy" href="#">Купить</a>
 						<a class="btn bookmark" href="#">В закладки</a>
 					</div>
@@ -350,10 +355,9 @@
 						<a href="#">Перфоратор BOSCH BFG 2000</a>
 					</div>
 					<div class="item-old-price">
-
 					</div>
 					<div class="item-price">
-						<a class="btn" href="#">12500 р.</a>
+						<a class="btn price" href="#">12500 р.</a>
 					</div>
 				</article>
 				<ul class="pagination">
@@ -373,7 +377,7 @@
 			</div>
 		</div>
 		<section class="about-item">
-			<div class="container">
+			<div class="container clearfix">
 				<h2>Пара слов о перфораторах</h2>
 				<p class="text-block">
 					Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
