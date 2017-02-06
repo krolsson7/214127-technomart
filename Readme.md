@@ -1,4 +1,3 @@
-# Личный проект «Техномарт»
 ﻿# Личный проект «Техномарт»
 
 * Студент: [Pavel Mostovoi](https://up.htmlacademy.ru/htmlcss/16/user/214127).
