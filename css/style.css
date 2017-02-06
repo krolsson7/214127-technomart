@@ -402,7 +402,6 @@ a:focus ~ .service-description {
 	font-size: 0;
 	outline: solid #db1c4c;
 }
-
 .pagination li {
 	display: inline-block;
 	vertical-align: top;
