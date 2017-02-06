@@ -29,6 +29,7 @@ h2 {
 }
 .container {
 	width: 960px;
+	margin: 0 auto;
 	outline: solid yellow;
 }
 .header-first-block {
@@ -117,7 +118,7 @@ a {
 	margin-bottom: 50px;
 }
 .container-promo {
-	padding: 0 10px;
+	
 	margin-bottom: 50px;
 }
 .promo-materials {
@@ -150,6 +151,12 @@ a {
 	height: 266px;
 	margin-right: 20px;
 	background-color: #eaecef;
+}
+.slide {
+	display: none;
+}
+.slide .active  {
+	display: block;
 }
 .promo-sale {
 	float: right;
