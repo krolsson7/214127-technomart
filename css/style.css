@@ -28,26 +28,26 @@ h2 {
 	clear: both;
 }
 .container {
-	width: 960px;
+	width: 940px;
 	margin: 0 auto;
+	padding: 0 10px;
 	outline: solid yellow;
 }
 .header-first-block {
-	width: 960px;
 	margin-bottom: 40px;
+	outline: solid #09f7df;
 }
 .technomart-logo {
 	display: block;
 	width: 220px;
-	float: left;
-	margin-left: 10px;
 	margin-right: 10px;
+	float: left;
 	outline: solid #4ef442;
 }
 .search {
-	width: 90px;
+	width: 240px;
 	float: left;
-	margin-right: 160px;
+	margin-right: 10px;
 	outline: solid #4ef442;
 }
 .bookmarks {
@@ -65,12 +65,11 @@ h2 {
 .order {
 	width: 150px;
 	float: right;
-	margin-right: 10px;
 	outline: solid #4ef442;
 }
 .header-second-block {
-	width: 960px;
 	margin-bottom: 25px;
+	outline: solid #09f7df;
 }
 .company-description {
 	width: 300px;
@@ -85,7 +84,7 @@ h2 {
 	outline: solid #4b0451;
 }
 .user-block {
-	width: 310px;
+	width: 300px;
 	float: right;
 	outline: solid #4b0451;
 }
@@ -93,9 +92,8 @@ h2 {
 	display: inline-block;
 }
 .header-third-block {
-	width: 960px;
 	margin-bottom: 105px;
-	outline: solid #4b0451;
+	outline: solid #09f7df;
 }
 .main-navigation {
 	width: 940px;
@@ -118,7 +116,6 @@ a {
 	margin-bottom: 50px;
 }
 .container-promo {
-	
 	margin-bottom: 50px;
 }
 .promo-materials {
@@ -141,7 +138,6 @@ a {
 	float: right;
 	width: 300px;
 	height: 123px;
-	margin-right: 20px;
 	margin-bottom: 20px;
 	background-color: #eaecef;
 }
@@ -164,19 +160,15 @@ a {
 	height: 123px;
 	margin-bottom: 20px;
 	background-color: #eaecef;
-	margin-right: 20px;
 }
 .promo-delivery {
 	float: right;
 	width: 300px;
 	height: 123px;
-	margin-right: 20px;
 	background-color: #eaecef;
 }
 .popular-goods {
-	width: 940px;
 	margin-bottom: 20px;
-	padding: 0 10px;
 }
 .popular-title {
 	float: left;
@@ -191,7 +183,6 @@ a {
 	background-color: #fc55bc;
 }
 .item-container {
-	width: 940px;
 	margin-top: 30px;
 	background-color: #a8f7ea;
 }
@@ -206,12 +197,10 @@ a {
 	margin-right: 0;
 }
 .popular-brands {
-	width: 940px;
-	padding: 0 10px;
 }
 .brands-container {
-	width: 920px;
 	margin-bottom: 85px;
+	outline: solid #09f7df;
 }
 .brand {
 	float: left;
@@ -221,15 +210,16 @@ a {
 	background-color: #4286f4;
 	margin-bottom: 10px;
 }
+.brand:nth-child(4n) {
+	margin-right: 0;
+}
 .service-block {
-	width: 960px;
 	margin-bottom: 55px;
 }
 .service {
 	width: 400px;
 	margin-bottom: 90px;
 	background-color: #4286f4;
-	padding: 0 10px;
 }
 .service-navigation {
 	height: 280px;
@@ -258,7 +248,6 @@ a:focus ~ .service-description {
 	display: block;
 }
 .contacts-block {
-	width: 960px;
 	margin-bottom: 90px;
 	outline: solid #7cf494;
 	height: 400px;
@@ -276,7 +265,6 @@ a:focus ~ .service-description {
 	outline: solid #7cf494;
 }
 .footer-navigation-top {
-	width: 960px;
 	outline: solid #7cf494;
 }
 .technomart-logo-footer {
@@ -298,7 +286,6 @@ a:focus ~ .service-description {
 	display: inline;
 }
 .footer-navigation-bottom {
-	width: 960px;
 }
 .footer-contacts {
 	width: 380px;
