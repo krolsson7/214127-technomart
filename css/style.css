@@ -44,6 +44,7 @@ h2 {
 	float: left;
 	display: block;
 	width: 220px;
+
 	background-color: #ee3643;
 	box-shadow: 0 5px #b52933;
 	font-family: 'Cuprum', 'Arial', sans-serif;
@@ -66,6 +67,7 @@ a.technomart-logo:active {
 	position: relative;
 	float: left;
 	width: 270px;
+	height: 42px;
 	font: inherit;
 	color: inherit;
 }
@@ -90,18 +92,26 @@ a.technomart-logo:active {
 	opacity: 1;
 }
 .search-form input {
-	width: 270px;
-	height: 42px;
-	padding: 12px 0;
-	padding-left: 50px;
-	border: none;
-	outline: none;
-	font-family: 'Cuprum', 'Arial', sans-serif;
-	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #293449;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 48px;
+  width: 270px;
+  height: 42px;
+  z-index: 1;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
 }
+
 .search-form input::-webkit-input-placeholder {
 	color: #ffffff;
 }
@@ -116,7 +126,7 @@ a.technomart-logo:active {
 	background-color: #ffffff;
 	color: #000000;
 }
-.search-form:focus::before {
+.search-form input:focus::before {
 	content: "";
 	position: absolute;
 	top: 13px;
@@ -130,6 +140,7 @@ a.technomart-logo:active {
 	position: relative;
 	float: left;
 	width: 150px;
+	height: 42px;
 } 
 .bookmarks a,
 .add-to-cart a,
