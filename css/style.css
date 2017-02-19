@@ -39,12 +39,12 @@ h2 {
 .main-header .header-first-block {
 	background-color: #293449;
 	color: #ffffff;
+	margin-bottom: 45px;
 }
 .technomart-logo {
 	float: left;
 	display: block;
 	width: 220px;
-
 	background-color: #ee3643;
 	box-shadow: 0 5px #b52933;
 	font-family: 'Cuprum', 'Arial', sans-serif;
@@ -150,7 +150,13 @@ a.technomart-logo:active {
 	color: inherit;
 	text-align: center;
 	text-decoration: none;
-	padding: 12px 0;
+	line-height: 42px;
+}
+.bookmarks a {
+	padding-left: 16px;
+}
+.add-to-cart a {
+	padding-left: 24px;
 }
 .bookmarks a:hover,
 .add-to-cart a:hover,
@@ -161,18 +167,18 @@ a.technomart-logo:active {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left:12px;
+	left:17px;
 	width: 14px;
-	height: 17px;
+	height: 16px;
 	background: url("../img/.icon-bookmark.png") no-repeat;
 }
 .add-to-cart::before {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left:12px;
-	width: 14px;
-	height: 17px;
+	left:16px;
+	width: 17px;
+	height: 16px;
 	background: url("../img/.icon-basket.png") no-repeat;
 }
 .order {
@@ -185,29 +191,33 @@ a.technomart-logo:active {
 .order a:hover {
 	background-color: #5fbb2d;
 }
-.header-second-block {
-	margin-bottom: 25px;
-}
 .company-description {
+	position: relative;
 	float: left;
 	width: 250px;
 	margin-right: 20px;
 	padding-left: 50px;
+	padding-bottom: 15px;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
+	vertical-align: top;
+}
+.company-description p {
+	position: absolute;
+	top: -12px;
+	left: 52px;
 }
 .company-contacts {
 	float: left;
 	width: 270px;
-	margin-right: 50px;
+	margin-right: 40px;
 }
 .company-contacts .phone {
 	position: relative;
 	width: 264px;
 	border: 3px solid #ffffff;
-	padding: 7px 0;
 }
 .phone::before {
 	content: "";
@@ -224,24 +234,23 @@ a.technomart-logo:active {
 	font-size: 21px;
 	color: #e9292a;
 	text-decoration: none;
-	line-height: 25px;
+	line-height: 40px;
 	padding-left: 71px;
 }
 .company-contacts .adress {
-	margin-top: 5px;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 14px;
 	color: #32425c;
 	text-align: center;
 }
 .user-block {
 	position: relative;
 	float: right;
-	max-width: 300px;
+	max-width: 310px;
 }
 .user-block .login {
 	display: inline-block;
-	padding: 10px 27px;
+	padding: 10px 25px;
 	padding-left: 48px;
 	vertical-align: top;
 	font: inherit;
@@ -291,6 +300,7 @@ a.technomart-logo:active {
 	color: #c5c5c5;
 }
 .header-third-block {
+	margin-top: 25px;
 	margin-bottom: 65px;
 }
 .main-navigation {
@@ -605,6 +615,71 @@ a.technomart-logo:active {
 .item:hover {
 	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
+
+.item:hover .action {
+  display: block;
+}
+.item .action {
+  position: absolute;
+  display: none;
+  width: 218px;
+  height: 121px;
+  padding-top: 43px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.action .btn {
+  position: relative;
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.btn.buy {
+  background-color: #63a63e;
+  box-shadow: inset 0 -3px #367315;
+}
+
+.btn.buy .icon-basket {
+  position: absolute;
+  left: 10px;
+  opacity: 0.3;
+}
+
+.btn.buy:hover {
+  background-color: #5fbb2d;
+}
+
+.btn.buy:hover .icon-basket {
+  opacity: 1;
+}
+
+.btn.buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.btn.bookmark {
+  width: 129px;
+  background-color: #ffffff;
+  color: #32425c;
+  border: 3px solid #63a63e;
+  padding: 7px 0;
+}
+
+.btn.bookmark:hover {
+  border-color: #32425c;
+}
+
+.btn.bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+  border-color: rgba(50, 66, 92, 0.3);
+}
+
 .item:last-child {
 	margin-right: 0;
 }
@@ -1113,7 +1188,6 @@ a.not-zero:hover {
 	position: absolute;
 	background: url("../img/.icon-user.png") no-repeat;
 	opacity: 0.7;
-
 }
 .logout-icon::before {
 	content: "";
@@ -1187,7 +1261,7 @@ a.username:active {
 .breadcrumbs {
 	margin: 0;
 	padding: 17px 0;
-	padding-left: 28px;
+	padding-left: 23px;
 	list-style: none;
 	font-size: 0;
 	line-height: 0;
@@ -1239,6 +1313,7 @@ a.username:active {
 	color: #32425c;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	text-transform: uppercase;
 	background-color: #f2f6f8;
 }
@@ -1248,7 +1323,7 @@ a.username:active {
 	padding-top: 20px;
 }
 .column-title {
-	padding: 10px 15px;
+	padding: 6px 15px;
 	text-transform: uppercase;
 	background-color: #f7f3ec;
 	border-radius: 1px;
@@ -1305,14 +1380,14 @@ a.username:active {
 	box-shadow: 0 2px rgba(0, 0, 0, 0.14);
 }
 .min-toggle {
-	left: 15px;
+	left: 17px;
 }
 .max-toggle {
-	left: 145px;
+	left: 160px;
 }
 .min-price,
 .max-price {
-	width: 75px;
+	width: 72px;
 	padding: 10px;
 	margin-bottom: 25px;
 	border: none;
@@ -1387,9 +1462,9 @@ input[type="radio"] + label:active::before {
 	opacity: 0.3;
 }
 .button {
-	margin-top: 58px;
+	margin-top: 60px;
 	text-transform: uppercase;
-	padding: 6px 35px;
+	padding: 10px 35px;
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
@@ -1581,4 +1656,252 @@ input[type="radio"] + label:active::before {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
+}
+
+/* modal styles */
+
+.modal-cart,
+.modal-write-us {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 50;
+	display: none;
+	margin-left: -310px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 620px;
+	background-color: #ffffff;
+	border-top: 7px solid #ee3643;
+	box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+}
+.modal-show {
+  display: block;
+  animation: popap 0.6s;
+}
+
+.modal-error {
+  animation: error 0.5s;
+}
+.modal-close {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	font-size: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background-image:
+	linear-gradient(to bottom, transparent 10px, #ee3643 10px, #ee3643 15px, transparent 15px),
+	linear-gradient(to right, transparent 10px, #ee3643 10px, #ee3643 15px, transparent 15px);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.modal-close:active {
+	outline: none;
+	border: none;
+}
+.modal-write-us-form {
+	padding: 25px 80px 40px;
+	font-size: 0;
+}
+.modal-write-us-form label {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.modal-write-us-form label:first-child {
+	margin-right: 20px;
+}
+.modal-write-us-form input,
+.modal-write-us-form textarea {
+	display: block;
+	width: 184px;
+	margin-top: 5px;
+	padding: 8px 15px;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.modal-write-us-form input:-ms-input-placeholder,
+.modal-write-us-form textarea:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-write-us-form input:focus,
+.modal-write-us-form textarea:focus {
+	outline: none;
+}
+
+.modal-write-us-form textarea {
+	width: 424px;
+	resize: none;
+}
+
+.modal-write-us-button {
+	padding: 35px 80px;
+	background-color: #f1f1f1;
+	font-size: 0;
+}
+
+.modal-write-us-button .btn {
+	box-sizing: content-box;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+.modal-write-us-button .btn-write-us {
+	background-color: #ee3643;
+}
+.modal-write-us-button .btn-write-us:hover {
+	background: #ca2c37;
+}
+.modal-write-us-button .btn-write-us:active {
+	background: #ba2732;
+}
+
+.modal-map {
+	position: absolute;
+	bottom: 350px;
+	right: 50%;
+	width: 0;
+	height: 0;
+	margin: 0 auto;
+	margin-right: -470px;
+	overflow: hidden;
+}
+
+.modal-map .modal-close {
+	z-index: 50;
+}
+
+.map {
+	position: absolute;
+	bottom: 0;
+	height: 565px;
+	width: 100%;
+	z-index: 0;
+	background: #ffffff url('../img/map-big.jpg') no-repeat right bottom;
+}
+
+.modal-map.show-window {
+	width: 940px;
+	height: 445px;
+	transition: 0.6s;
+	box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.5);
+}
+
+.modal-cart-message {
+	padding: 45px 80px;
+	background-color: #ffffff;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.modal-cart-circle {
+	position: relative;
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: top;
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+	background-color: #63a63e;
+}
+
+.modal-cart-circle::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -18px;
+	margin-top: -14px;
+	width: 28px;
+	height: 14px;
+	background-color: transparent;
+	border-left: 8px solid #ffffff;
+	border-bottom: 8px solid #ffffff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.modal-cart-message p {
+	margin: 0;
+	padding: 12px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.modal-cart-buttons {
+	background-color: #f1f1f1;
+	padding: 40px 80px;
+	font-size: 0;
+}
+
+.modal-cart-buttons .btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+}
+.modal-cart-buttons .btn-cart {
+	background-color: #ee3643;
+}
+
+.modal-cart-buttons .continue {
+	margin-left: 20px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+
+
+/* animation */
+
+
+@keyframes popap {
+	0% {
+		-webkit-transform: translateY(-400%);
+		transform: translateY(-400%);
+	}
+	70% {
+		-webkit-transform: translateY(-40%);
+		transform: translateY(-40%);
+	}
+	90% {
+		-webkit-transform: translateY(-60%);
+		transform: translateY(-60%);
+	}
+	100% {
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+}
+
+@keyframes error {
+	0%, 100% {
+		-webkit-transform:translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform:translate(-3%, -50%);
+		transform: translate(-3%, -50%);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform:translate(3%, -50%);
+		transform: translate(3%, -50%);
+	}
 }

@@ -20,10 +20,10 @@
 					<input type="search" name="search-request" id="search-field" placeholder="Поиск:">
 				</form>
 				<div class="bookmarks">
-					<a href="#"><span class="bookmarks-icon"></span>Закладки:0</a>
+					<a href="#"><span class="bookmarks-icon"></span>Закладки: 0</a>
 				</div>
 				<div class="add-to-cart">
-					<a class="not-zero" href="#"><span class="add-to-cart-icon"></span>Корзина:10</a>
+					<a class="not-zero" href="#"><span class="add-to-cart-icon"></span>Корзина: 10</a>
 				</div>
 				<div class="order">
 					<a href="#">Оформить заказ</a>
@@ -131,7 +131,7 @@
 						</div>
 						<div class="price-category">
 							<input class="min-price" type="text" value="0">
-							-
+							—
 							<input class="max-price" type="text" value="30000">
 						</div>
 					</fieldset>
@@ -478,5 +478,17 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-cart">
+		<button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+		<div class="modal-cart-message">
+			<span class="modal-cart-circle"></span>
+			<p>Товар добавлен в корзину!</p>
+		</div>
+		<div class="modal-cart-buttons">
+			<a class="btn btn-cart" href="#">Оформить заказ</a>
+			<a class="btn btn-cart continue" href="#">Продолжить покупки</a>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>
