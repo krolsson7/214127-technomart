@@ -313,6 +313,7 @@ a.technomart-logo:active {
 .main-navigation {
 	background-color: #32425c;
 	box-shadow: inset 0 -5px #293449;
+
 }
 .main-navigation ul {
 	margin: 0;
@@ -338,11 +339,11 @@ a.technomart-logo:active {
 	color: #ffffff;
 }
 .main-navigation li:first-child a {
-	padding-left: 52px;
+	padding-left: 51px;
 	padding-right: 32px;
 }
 .main-navigation li:last-child a {
-	padding-left: 33px;
+	padding-left: 32px;
 	padding-right: 55px;
 }
 .main-navigation a:active {
