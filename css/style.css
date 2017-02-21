@@ -1064,7 +1064,7 @@ a.footer-logo:active {
 .footer-main-nav {
 	float: right;
 	box-shadow: none;
-    margin-top: 21px;
+	margin-top: 21px;
 }
 .footer-main-nav li:last-child a,
 .footer-second-nav li:last-child a {
@@ -1526,6 +1526,28 @@ input[type="radio"] + label:active,
 input[type="radio"] + label:active::before {
 	opacity: 0.3;
 }
+input[type="checkbox"] + label:active::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 0;
+	font-size: 27px;
+	background: url("../img/.icon-check-on.png") no-repeat;
+	opacity: 0.7;
+}
+input[type="radio"] + label:active::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 0;
+	top: -2px;
+	font-size: 27px;
+	background: url("../img/.icon-circle-dot.png") no-repeat;
+	opacity: 0.7;
+
+	}
 .brands-category {
 	padding-bottom: 5px;
 }
