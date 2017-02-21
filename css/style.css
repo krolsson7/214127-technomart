@@ -1,20 +1,20 @@
 body {
 	position: relative;
 	min-width: 960px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: #000000;
 }
 h1 {
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 36px;
 	line-height: 42px;
 	font-weight: bold;
 	color: #ffffff;
 }
 h2 {
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: bold;
@@ -32,7 +32,7 @@ h2 {
 }
 .main-header {
 	background-color: #f1f5f7;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 }
@@ -47,7 +47,7 @@ h2 {
 	width: 220px;
 	background-color: #ee3643;
 	box-shadow: 0 5px #b52933;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 400;
@@ -126,7 +126,7 @@ a.technomart-logo:active {
 	background-color: #ffffff;
 	color: #000000;
 }
-.search-form input:focus::before {
+.search-form:focus::before {
 	content: "";
 	position: absolute;
 	top: 13px;
@@ -156,7 +156,7 @@ a.technomart-logo:active {
 	padding-left: 16px;
 }
 .add-to-cart a {
-	padding-left: 24px;
+	padding-left: 20px;
 }
 .bookmarks a:hover,
 .add-to-cart a:hover,
@@ -192,11 +192,11 @@ a.technomart-logo:active {
 	background-color: #5fbb2d;
 }
 .company-description {
-	position: relative;
 	float: left;
 	width: 250px;
 	margin-right: 20px;
-	padding-left: 50px;
+	padding-left: 52px;
+	padding-top: 5px;
 	padding-bottom: 15px;
 	font-style: italic;
 	font-size: 16px;
@@ -205,9 +205,7 @@ a.technomart-logo:active {
 	vertical-align: top;
 }
 .company-description p {
-	position: absolute;
-	top: -12px;
-	left: 52px;
+	margin: 0;
 }
 .company-contacts {
 	float: left;
@@ -223,7 +221,7 @@ a.technomart-logo:active {
 	content: "";
 	position: absolute;
 	top: 11px;
-	left: 14px;
+	left: 10px;
 	width: 19px;
 	height: 19px;
 	background: url("../img/.icon-phone.png") no-repeat;
@@ -235,13 +233,19 @@ a.technomart-logo:active {
 	color: #e9292a;
 	text-decoration: none;
 	line-height: 40px;
-	padding-left: 71px;
+	padding-left: 70px;
+	margin-left: -1px;
 }
 .company-contacts .adress {
 	font-size: 14px;
 	line-height: 14px;
 	color: #32425c;
 	text-align: center;
+}
+.adress p {
+	margin-top: 0;
+	margin-left: -2px;
+	padding-top: 9px;
 }
 .user-block {
 	position: relative;
@@ -251,6 +255,7 @@ a.technomart-logo:active {
 .user-block .login {
 	display: inline-block;
 	padding: 10px 25px;
+	padding-top: 11px;
 	padding-left: 48px;
 	vertical-align: top;
 	font: inherit;
@@ -259,8 +264,9 @@ a.technomart-logo:active {
 	text-decoration: none;
 	color: #000000;
 	background-color: #ffffff;
-	margin-left: 6px;
+	margin-right: 5px;
 	position: relative;
+
 }
 .login::before {
 	content: "";
@@ -283,6 +289,7 @@ a.technomart-logo:active {
 .user-block .registration {
 	display: inline-block;
 	padding: 10px 25px;
+	padding-top: 11px;
 	vertical-align: top;
 	font: inherit;
 	font-size: 21px;
@@ -325,15 +332,17 @@ a.technomart-logo:active {
 	padding: 17px 30px;
 	padding-bottom: 22px;
 	text-decoration: none;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	line-height: 21px;
 	color: #ffffff;
 }
 .main-navigation li:first-child a {
-	padding-left: 55px;
+	padding-left: 52px;
+	padding-right: 32px;
 }
 .main-navigation li:last-child a {
+	padding-left: 33px;
 	padding-right: 55px;
 }
 .main-navigation a:active {
@@ -341,9 +350,9 @@ a.technomart-logo:active {
 	color: rgba(255, 255, 255, 0.5);
 }
 .container-promo {
-	padding-top: 60px;
-	padding-bottom: 35px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	padding-top: 57px;
+	padding-bottom: 33px;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 700;
 	color: #ffffff;
 }
@@ -381,6 +390,10 @@ a.technomart-logo:active {
 .promo-offers b {
 	display: block;
 	margin-bottom: 12px;
+	padding-left: 3px;
+}
+.promo-offers a {
+	margin-left: 5px;
 }
 .icon-new {
 	position: absolute;
@@ -398,7 +411,7 @@ a.technomart-logo:active {
 	border-radius: 3px;
 	text-align: center;
 	text-decoration: none;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -416,7 +429,7 @@ a.technomart-logo:active {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 .promo-offers::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -446,16 +459,15 @@ a.technomart-logo:active {
 	margin-right: 20px;
 }
 .slide {
-	position: absolute;
+	display: none;
 	top: 0;
 	left: 0;
 	width: 620px;
 	height: 266px;
-	z-index: 0;
 	background-color: #32425c;
 }
-.slide .active {
-	z-index: 10;
+.active {
+	display: block;
 }
 .slide-description {
 	position: absolute;
@@ -467,10 +479,12 @@ a.technomart-logo:active {
 }
 .slide-description h1 {
 	margin: 0;
+	text-transform: uppercase;
+	font-size: 36px;
 }
 .slide-description p {
 	margin: 0;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -481,8 +495,8 @@ a.technomart-logo:active {
 .slide .btn-catalog {
 	position: absolute;
 	left: 25px;
-	bottom: 20px;
-	padding: 10px 45px;
+	bottom: 22px;
+	padding: 10px 48px;
 }
 .btn-catalog:hover {
 	background-color: #ca2c37;
@@ -527,15 +541,15 @@ a.technomart-logo:active {
 	position: absolute;
 	display: block;
 	top: -20px;
-	left: 575px;
+	left: 577px;
 	width: 22px;
 	height: 40px;
 	background: url("../img/right-arrow.png") no-repeat;
 } 
 .slide-control {
 	position: absolute;
-	bottom: 35px;
-	left: 50%;
+	bottom: 37px;
+	left: 290px;
 	z-index: 30;
 }
 .slide-page {
@@ -564,7 +578,7 @@ a.technomart-logo:active {
 	background-color: #ee3643;
 }
 .popular-goods {
-	padding-top: 25px;
+	padding-top: 28px;
 	padding-bottom: 25px;
 	padding-left: 30px;
 	padding-right: 25px;
@@ -580,11 +594,10 @@ a.technomart-logo:active {
 }
 .popular-goods .popular-btn {
 	display: block;
-	padding: 10px 0;
 	border-radius: 3px;
 	text-align: center;
 	text-decoration: none;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -640,22 +653,31 @@ a.technomart-logo:active {
 }
 
 .btn.buy {
+	position: relative;
 	background-color: #63a63e;
 	box-shadow: inset 0 -3px #367315;
+	
 }
-
-.btn.buy .icon-basket {
-	position: absolute;
-	left: 10px;
-	opacity: 0.3;
-}
-
 .btn.buy:hover {
 	background-color: #5fbb2d;
 }
+.btn.buy::before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	width: 17px;
+	height: 16px;
+	background: url("../img/.icon-basket.png") no-repeat;
+}
 
-.btn.buy:hover .icon-basket {
-	opacity: 1;
+
+.btn.buy:hover::before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	width: 17px;
+	height: 16px;
+	background: url("../img/.icon-basket-white.png") no-repeat;
 }
 
 .btn.buy:active {
@@ -693,7 +715,7 @@ a.technomart-logo:active {
 	display: block;
 	margin: 0 20px;
 	margin-top: 15px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
@@ -704,33 +726,34 @@ a.technomart-logo:active {
 .item-old-price {
 	padding: 10px 0;
 	height: 18px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 18px;
 	text-decoration: line-through;
 	color: #999999;
 	text-align: center;
+	text-transform: uppercase;
 }
 .item-price {
 	position: relative;
 	width: 140px;
 	margin-left: 42px;
-	margin-top: 5px;
+	margin-top: 3px;
 }
 .item-price .btn {
-	width: 116px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	width: 108px;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 18px;
 	background-color: #ee3643;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
-	padding-left: 5px;
+	padding-left: 13px;
 }
 .item-price .btn::after {
-	content: '';
+	content: "";
 	position: absolute;
 	right: 0px;
 	top: 0px;
@@ -760,18 +783,18 @@ a.technomart-logo:active {
 .popular-brands {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	padding-left: 30px;
+	padding-left: 25px;
 	padding-right: 25px;
 	background-color: #f7f3ec;
 }
 .popular-brands .popular-btn {
 	display: block;
-	width: 145px;
+	width: 143px;
 	padding: 10px 0;
 	border-radius: 3px;
 	text-align: center;
 	text-decoration: none;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
@@ -796,6 +819,7 @@ a.technomart-logo:active {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #e5e5e5;
+	height: 143px;
 }
 .brand:nth-child(4n) {
 	margin-right: 0;
@@ -825,19 +849,26 @@ a.technomart-logo:active {
 }
 .service-container {
 	background-color: #f2f6f8;
-	padding-top: 60px;
-	margin-top: 50px;
+	padding-top: 65px;
+	margin-top: 46px;
+	padding-bottom: 5px;
 }
 .service h2,
 .contacts-content h2,
 .contacts-map h2 {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 	color: #000000;
 	text-transform: uppercase;
+	font-weight: 400;
 }
+
 .service {
 	margin-bottom: 70px;
+}
+.service p {
+	margin: 0;
+	font-size: 13px;
 }
 .service-navigation {
 	position: relative;
@@ -845,13 +876,13 @@ a.technomart-logo:active {
 	width: 240px;
 }
 .service-navigation::before {
-	content: '';
+	content: "";
 	position: absolute;
 	right: 0;
 	top: -46px;
 	width: 10px;
 	height: 272px;
-	background: url('../img/border-line.png') no-repeat;
+	background: url("../img/border-line.png") no-repeat;
 }
 .service-navigation ul {
 	margin: 0;
@@ -860,8 +891,9 @@ a.technomart-logo:active {
 }
 .service-navigation a {
 	display: block;
-	padding: 15px 20px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	padding: 16px 22px;
+	padding-top: 14px;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 30px;
@@ -886,8 +918,9 @@ a.technomart-logo:active {
 }
 .service-about h3 {
 	margin: 0;
-	margin-bottom: 30px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	margin-top:-2px;
+	margin-bottom: 23px;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
@@ -897,6 +930,7 @@ a.technomart-logo:active {
 .service-about p,
 .internet-contact p {
 	margin: 0;
+	font-size: 13px;
 }
 .service-about {
 	display: none;
@@ -926,16 +960,17 @@ a.technomart-logo:active {
 }
 .contacts-block {
 	position: relative;
-	padding-top: 75px;
-	padding-bottom: 85px;
+	padding-top: 77px;
+	padding-bottom: 86px;
 }
 .contacts-block p {
 	margin: 0;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
+	font-size: 13px;
 }
 .contacts-block .btn {
 	float: left;
-	margin-top: 40px;
+	margin-top: 35px;
 	background-color: #ee3643;
 }
 .contacts-content {
@@ -951,7 +986,7 @@ a.technomart-logo:active {
 	position: relative;
 	padding-left: 35px;
 	margin-bottom: 20px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: 700;
@@ -960,7 +995,7 @@ a.technomart-logo:active {
 	margin: 0;
 }
 .contacts-content li::before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -982,9 +1017,11 @@ a.technomart-logo:active {
 	width: 300px;
 	float: right;
 }
+
 .contacts-map .btn {
-	padding: 10px 60px;
+	padding: 10px 61px;
 	background-color: #ee3643;
+	margin-top: 40px;
 }
 .contacts-map .btn:hover {
 	background-color: #ca2c37;
@@ -997,6 +1034,7 @@ a.technomart-logo:active {
 	width: 300px;
 	height: 158px;
 	text-decoration: none;
+	margin-top: 30px;
 }
 .footer-navigation {
 	background-color: #32425c;
@@ -1007,13 +1045,13 @@ a.technomart-logo:active {
 	width: 220px;
 	background-color: #ee3643;
 	box-shadow: 0 5px #b52933;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-weight: 400;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
-	padding: 15px 0;
+	padding: 17px 0;
 	font-size: 30px;
 	line-height: 30px;
 }
@@ -1026,7 +1064,7 @@ a.footer-logo:active {
 .footer-main-nav {
 	float: right;
 	box-shadow: none;
-	padding-top: 15px;
+    margin-top: 21px;
 }
 .footer-main-nav li:last-child a,
 .footer-second-nav li:last-child a {
@@ -1034,6 +1072,7 @@ a.footer-logo:active {
 }
 .footer-main-nav li {
 	display: inline-block;
+	padding: 1px;
 }
 .footer-navigation-bottom {
 	padding-top: 10px;
@@ -1041,15 +1080,17 @@ a.footer-logo:active {
 }
 .footer-contacts {
 	float: left;
-	padding-top: 17px;
+	padding-top: 2px;
+	padding-left: 3px;
 	width: 330px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	color: #ffffff;
 }
 .footer-second-nav {
 	float: right;
 	box-shadow: none;
+	margin-top: -13px;
 }
 .footer-main-nav a:hover,
 .footer-second-nav a:hover {
@@ -1063,6 +1104,10 @@ a.footer-logo:active {
 }
 .footer-second-nav li {
 	display: inline-block;
+	padding-right: 5px;
+}
+.footer-second-nav li:last-child {
+	padding-right: 0;
 }
 .footer-second-nav a {
 	color: #ffd180;
@@ -1071,7 +1116,7 @@ a.footer-logo:active {
 	padding-top: 35px;
 	padding-bottom: 30px;
 	background-color: #293449;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1079,12 +1124,14 @@ a.footer-logo:active {
 .footer-copyright {
 	width: 240px;
 	float: left;
+	padding-left: 2px;
+	padding-top: 2px;
 }
 .footer-social {
 	float: left;
 	position: relative;
 	width: 160px;
-	margin-left: 150px;
+	margin-left: 148px;
 }
 .social-list {
 	margin: 0;
@@ -1139,21 +1186,21 @@ a.footer-logo:active {
 .footer-email {
 	float: right;
 	max-width: 300px;
-	margin-top: -25px;
-	margin-right: 10px;
+	margin-top: -12px;
+	margin-right: 12px;
 }
 .contacts-us {
 	float: right;
 	max-width: 140px;
 	line-height: 14px;
-	padding: 0;
+}
+.contacts-us p {
+	margin-bottom: 4px;
 }
 .contacts-us a {
 	font-family: inherit;
 	text-decoration: none;
 	color: #ffd180;
-	line-height: 10px;
-	padding: 0;
 }
 .contacts-us a:hover {
 	text-decoration: underline;
@@ -1164,7 +1211,7 @@ a.footer-logo:active {
 }
 .email {
 	float: left;
-	margin-right: 50px;
+	margin-right: 52px;
 }
 /* catalog technomart */
 .not-zero {
@@ -1173,25 +1220,28 @@ a.footer-logo:active {
 a.not-zero:hover {
 	background-color: #ca2c37;
 }
-.user-block {
-	position: relative;
-}
 .user-block .username {
 	padding-right: 60px;
 }
 .username::before {
 	content: "";
 	position: absolute;
+	top: 15px;
+	left: 13px;
 	background: url("../img/.icon-user.png") no-repeat;
 }
 .username:hover::before {
 	content: "";
 	position: absolute;
+	top: 15px;
+	left: 13px;
 	background: url("../img/.icon-user-hover.png") no-repeat;
 }
 .username:active::before {
 	content: "";
 	position: absolute;
+	top: 15px;
+	left: 13px;
 	background: url("../img/.icon-user.png") no-repeat;
 	opacity: 0.7;
 }
@@ -1200,8 +1250,8 @@ a.not-zero:hover {
 	position: absolute;
 	width: 21px;
 	height: 17px;
-	top: 13px;
-	left: 265px;
+	top: 15px;
+	left: 268px;
 	background: url("../img/.icon-logout.png") no-repeat;
 }
 .logout-icon:hover::before {
@@ -1209,8 +1259,8 @@ a.not-zero:hover {
 	position: absolute;
 	width: 21px;
 	height: 17px;
-	top: 13px;
-	left: 265px;
+	top: 15px;
+	left: 268px;
 	background: url("../img/.icon-logout-hover.png") no-repeat;
 }
 .logout-icon:active::before {
@@ -1218,8 +1268,8 @@ a.not-zero:hover {
 	position: absolute;
 	width: 21px;
 	height: 17px;
-	top: 13px;
-	left: 265px;
+	top: 15px;
+	left: 268px;
 	background: url("../img/.icon-logout.png") no-repeat;
 	opacity: 0.7;
 }
@@ -1232,15 +1282,15 @@ a.username:active {
 .user-menu {
 	padding: 0;
 	margin: 0;
-	margin-left: 12px;
+	margin-left: 5px;
 	list-style: none;
 }
 .user-menu li {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 10px;
-	padding: 0 15px;
+	margin-top: 7px;
+	padding: 0 13px;
 }
 .user-menu li:last-child::before {
 	content: "";
@@ -1266,8 +1316,8 @@ a.username:active {
 }
 .breadcrumbs {
 	margin: 0;
-	padding: 17px 0;
-	padding-left: 23px;
+	padding: 19px 0;
+	padding-left: 22px;
 	list-style: none;
 	font-size: 0;
 	line-height: 0;
@@ -1277,8 +1327,8 @@ a.username:active {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	padding: 0 20px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	padding: 0 21px;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -1290,6 +1340,9 @@ a.username:active {
 	font-size: 16px;
 	line-height: 20px;
 }
+.breadcrumbs li:last-child {
+	padding-left: 20px;
+}
 .breadcrumbs a {
 	font: inherit;
 	color: #000000;
@@ -1300,7 +1353,7 @@ a.username:active {
 	position: absolute;
 	width: 15px;
 	height: 12px;
-	top: 20px;
+	top: 21px;
 	left: 0px;
 	background: url("../img/.icon-home.png") no-repeat;
 }
@@ -1329,16 +1382,18 @@ a.username:active {
 	padding-top: 20px;
 }
 .column-title {
-	padding: 6px 15px;
+	padding: 6px 18px;
 	text-transform: uppercase;
 	background-color: #f7f3ec;
 	border-radius: 1px;
+	font-size: 13px;
 }
 .filter-category {
 	border: none;
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 5px;
 }
 .filter-category:last-child {
 	border: none;
@@ -1364,8 +1419,8 @@ a.username:active {
 }
 .scale {
 	margin: 0 auto;
-	margin-top: 39px;
-	width: 170px;
+	margin-top: 40px;
+	width: 180px;
 	height: 2px;
 	background-color: #d7dcde;
 }
@@ -1386,7 +1441,7 @@ a.username:active {
 	box-shadow: 0 2px rgba(0, 0, 0, 0.14);
 }
 .min-toggle {
-	left: 17px;
+	left: 20px;
 }
 .max-toggle {
 	left: 160px;
@@ -1399,14 +1454,15 @@ a.username:active {
 	border: none;
 	border-radius: 3px;
 	background-color: #f7f3ec;
-	font-family: 'PT Sans', 'Arial', sans-serif;
-	font-size: 18px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
 	line-height: 18px;
 	text-align: center;
 	color: #000000;
 }
 .min-price {
-	margin-right: 8px;
+	margin-right: 5px;
+	padding-left: 13px;
 }
 .max-price {
 	margin-left: 8px;
@@ -1420,6 +1476,8 @@ a.username:active {
 	display: inline-block;
 	margin-bottom: 17px;
 	padding-left: 35px;
+	font-size: 15px;
+	line-height: 22px;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -1429,7 +1487,7 @@ input[type="checkbox"] + label::before {
 	width: 23px;
 	height: 23px;
 	left: 0;
-	font-size: 28px;
+	font-size: 27px;
 	background: url("../img/.icon-check-off.png") no-repeat;
 	opacity: 0.7;
 }
@@ -1448,7 +1506,8 @@ input[type="radio"] + label::before {
 	width: 25px;
 	height: 25px;
 	left: 0;
-	font-size: 28px;
+	top: -2px;
+	font-size: 27px;
 	background: url("../img/.icon-circle.png") no-repeat;
 	opacity: 0.7;
 }
@@ -1467,13 +1526,24 @@ input[type="radio"] + label:active,
 input[type="radio"] + label:active::before {
 	opacity: 0.3;
 }
+.brands-category {
+	padding-bottom: 5px;
+}
+.power-title{
+	letter-spacing: 1px;
+}
+.power label {
+	font-size: 14px;
+}
+
 .button {
 	margin-top: 60px;
 	text-transform: uppercase;
-	padding: 10px 35px;
+	padding: 12px 38px;
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	border-radius: 3px;
+	font-size: 12px;
 }
 .right-column {
 	float: right;
@@ -1481,14 +1551,17 @@ input[type="radio"] + label:active::before {
 	padding-top: 20px;
 	padding-bottom: 60px;
 }
-.sort-by	{
+.sort-by {
 	float: right;
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	padding-top: 3px;
+	padding-right: 10px;
 }
+
 .regulation {
 	float: right;
 	display: inline-block;
@@ -1504,8 +1577,8 @@ input[type="radio"] + label:active::before {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 2px;
-	top: 5px;
+	left: 7px;
+	top: 6px;
 	background: url("../img/.icon-up-dir.png") no-repeat;
 	opacity: 0.3;
 }
@@ -1514,8 +1587,8 @@ input[type="radio"] + label:active::before {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 2px;
-	top: 5px;
+	left: 7px;
+	top: 6px;
 	background: url("../img/.icon-up-dir.png") no-repeat;
 	opacity: 1;
 }
@@ -1524,8 +1597,8 @@ input[type="radio"] + label:active::before {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 2px;
-	top: 5px;
+	left: 7px;
+	top: 6px;
 	background: url("../img/.icon-up-dir-red.png") no-repeat;
 	opacity: 1;
 }
@@ -1534,8 +1607,8 @@ input[type="radio"] + label:active::before {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 34px;
-	top: 5px;
+	left: 39px;
+	top: 6px;
 	background: url("../img/.icon-down-dir.png") no-repeat;
 	opacity: 0.3;
 }
@@ -1544,8 +1617,8 @@ input[type="radio"] + label:active::before {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 34px;
-	top: 5px;
+	left: 39px;
+	top: 6px;
 	background: url("../img/.icon-down-dir.png") no-repeat;
 	opacity: 1;
 }
@@ -1554,8 +1627,8 @@ input[type="radio"] + label:active::before {
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: 34px;
-	top: 5px;
+	left: 39px;
+	top: 6px;
 	background: url("../img/.icon-down-dir-red.png") no-repeat;
 	opacity: 1;
 }
@@ -1564,6 +1637,10 @@ input[type="radio"] + label:active::before {
 	display: inline-block;
 	vertical-align: top;
 	padding: 0 30px;
+	
+}
+.sort-by li:first-child {
+	padding-right: 37px;
 }
 .regulation li {
 	padding: 0;
@@ -1574,6 +1651,8 @@ input[type="radio"] + label:active::before {
 	color: rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	border-bottom: 1px dotted #ee3643;
+	margin: 0;
+	padding: 0;
 }
 .sort-by a:hover {
 	color: #000000;
@@ -1585,11 +1664,17 @@ input[type="radio"] + label:active::before {
 }
 
 .catalog-items {
-	margin-top: 20px;
+	margin-top: 22px;
 }
 .catalog-items .item {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 }
+.catalog-items .item-old-price {
+	padding-top: 11px;
+	padding-left: 5px;
+	padding-bottom: 8px;
+}
+
 .action {
 	display: none;
 }
@@ -1606,7 +1691,7 @@ input[type="radio"] + label:active::before {
 .pagination li {
 	display: inline-block;
 	vertical-align: top;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	margin-right: 10px;
 }
@@ -1645,12 +1730,12 @@ input[type="radio"] + label:active::before {
 .about-item {
 	clear: both;
 	padding-top: 40px;
-	padding-bottom: 52px;
+	padding-bottom: 67px;
 	background-color: #f2f6f8;
 }
 .about-item h2 {
 	color: #000000;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -1658,12 +1743,15 @@ input[type="radio"] + label:active::before {
 }
 .about-item p {
 	margin-top: 25px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 25px;
 	font-weight: 400;
+	margin: 0;
 }
-
+.text-block {
+	margin: 0;
+}
 /* modal styles */
 
 .modal-cart,
@@ -1686,7 +1774,12 @@ input[type="radio"] + label:active::before {
 	display: block;
 	animation: popup 0.6s;
 }
-
+.modal-show-map {
+	display: block;
+}
+.modal-show-cart {
+	display: block;
+}
 .modal-error {
 	animation: error 0.5s;
 }
@@ -1718,7 +1811,7 @@ input[type="radio"] + label:active::before {
 .modal-cart-message {
 	padding: 45px 80px;
 	background-color: #ffffff;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 42px;
 }
@@ -1735,7 +1828,7 @@ input[type="radio"] + label:active::before {
 }
 
 .modal-cart-circle::before {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -1788,7 +1881,7 @@ input[type="radio"] + label:active::before {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 20px;
-	font-family: 'Cuprum', 'Arial', sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: #000000;
@@ -1806,7 +1899,7 @@ input[type="radio"] + label:active::before {
 	padding: 8px 15px;
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
@@ -1873,7 +1966,7 @@ input[type="radio"] + label:active::before {
 	height: 565px;
 	width: 100%;
 	z-index: 0;
-	background: #ffffff url('../img/map-bg.jpg') no-repeat right bottom;
+	background: #ffffff url("../img/map-bg.jpg") no-repeat right bottom;
 }
 
 .modal-map.show-window {
