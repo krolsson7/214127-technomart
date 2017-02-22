@@ -461,22 +461,22 @@ a.technomart-logo:active {
 }
 .slide {
 	display: none;
-	top: 0;
-	left: 0;
 	width: 620px;
 	height: 266px;
-	background-color: #32425c;
+}
+.slide1 {
+	background: url("../img/slider1.jpg");
+}
+.slide2 {
+	background: url("../img/slider2.jpg");
 }
 .active {
 	display: block;
 }
 .slide-description {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
 	width: 570px;
 	padding: 20px 25px;
+	clear: both;
 }
 .slide-description h1 {
 	margin: 0;
@@ -489,6 +489,7 @@ a.technomart-logo:active {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
+	height: 120px; 
 }
 .btn-catalog {
 	background-color: #ee3643;
@@ -1050,6 +1051,7 @@ a.technomart-logo:active {
 }
 .footer-navigation {
 	background-color: #32425c;
+	padding: 2px;
 }
 .footer-logo {
 	float: left;
@@ -1066,6 +1068,7 @@ a.technomart-logo:active {
 	padding: 17px 0;
 	font-size: 30px;
 	line-height: 30px;
+	margin-top: -2px;
 }
 a.footer-logo:hover {
 	background-color: #ca2c37;
@@ -1077,6 +1080,7 @@ a.footer-logo:active {
 	float: right;
 	box-shadow: none;
 	margin-top: 21px;
+	padding-right: 3px;
 }
 .footer-main-nav li:last-child a,
 .footer-second-nav li:last-child a {
@@ -1084,11 +1088,10 @@ a.footer-logo:active {
 }
 .footer-main-nav li {
 	display: inline-block;
-	padding: 1px;
 }
 .footer-navigation-bottom {
 	padding-top: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 48px;
 }
 .footer-contacts {
 	float: left;
@@ -1102,7 +1105,8 @@ a.footer-logo:active {
 .footer-second-nav {
 	float: right;
 	box-shadow: none;
-	margin-top: -13px;
+	margin-top: -12px;
+	padding-right: 3px;
 }
 .footer-main-nav a:hover,
 .footer-second-nav a:hover {
@@ -1116,7 +1120,6 @@ a.footer-logo:active {
 }
 .footer-second-nav li {
 	display: inline-block;
-	padding-right: 5px;
 }
 .footer-second-nav li:last-child {
 	padding-right: 0;
