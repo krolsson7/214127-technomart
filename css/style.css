@@ -962,7 +962,7 @@ a.technomart-logo:active {
 .contacts-block {
 	position: relative;
 	padding-top: 77px;
-	padding-bottom: 86px;
+	padding-bottom: 87px;
 }
 .contacts-block p {
 	margin: 0;
@@ -978,10 +978,15 @@ a.technomart-logo:active {
 	width: 540px;
 	float: left;
 }
+.contacts-content-delivery p{
+	margin: 0;
+}
+
 .contacts-content ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	padding-top: 22px;
 }
 .contacts-content li {
 	position: relative;
@@ -991,6 +996,7 @@ a.technomart-logo:active {
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: 700;
+
 }
 .contacts-content li:last-child {
 	margin: 0;
@@ -1018,7 +1024,12 @@ a.technomart-logo:active {
 	width: 300px;
 	float: right;
 }
-
+.contacts-map-description {
+	width: 200px;
+}
+.contacts-map p {
+	margin: 0;
+}
 .contacts-map .btn {
 	padding: 10px 61px;
 	background-color: #ee3643;
