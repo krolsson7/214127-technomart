@@ -463,12 +463,13 @@ a.technomart-logo:active {
 	display: none;
 	width: 620px;
 	height: 266px;
+	background-color: #32425c;
 }
 .slide1 {
-	background: url("../img/slider1.jpg");
+	background: url("../img/slider1.jpg") no-repeat;
 }
 .slide2 {
-	background: url("../img/slider2.jpg");
+	background: url("../img/slider2.jpg") no-repeat;
 }
 .active {
 	display: block;
@@ -489,16 +490,14 @@ a.technomart-logo:active {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
-	height: 120px; 
+	height: 145px; 
 }
 .btn-catalog {
 	background-color: #ee3643;
 }
 .slide .btn-catalog {
-	position: absolute;
-	left: 25px;
-	bottom: 22px;
 	padding: 10px 48px;
+	max-width: 100px;
 }
 .btn-catalog:hover {
 	background-color: #ca2c37;
@@ -1562,7 +1561,7 @@ input[type="radio"] + label:active::before {
 	background: url("../img/.icon-circle-dot.png") no-repeat;
 	opacity: 0.7;
 
-	}
+}
 .brands-category {
 	padding-bottom: 5px;
 }
